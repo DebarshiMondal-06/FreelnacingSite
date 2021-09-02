@@ -1,4 +1,4 @@
-<?php
+<?php 
 include "auth.php";
 include('DB.php');
 if(!isset($_SESSION['client_id']))
@@ -8,6 +8,7 @@ if(!isset($_SESSION['client_id']))
 ?>
 
 <html>
+
 <head>
 	<title>Iniesta</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@ if(!isset($_SESSION['client_id']))
 	<script src="https://use.typekit.net/hoy3lrg.js"></script>
 	<script>
 		try {
-      Typekit.load({
+			Typekit.load({
 				async: true
 			});
 		} catch (e) {}
@@ -93,6 +94,8 @@ if(!isset($_SESSION['client_id']))
 		</div>-->
 			</div>
 			<div class="content-box" id="user_model_details">
+
+
 			</div>
 		</div>
 	</div>

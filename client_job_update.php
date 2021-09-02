@@ -13,7 +13,7 @@ $profile_id = $_SESSION['client_id'];
 $token = '';
 if(isset($_GET['token']))
 {
-$token = $_GET['token'];
+	$token = $_GET['token'];
 }
 
 ?>
@@ -36,7 +36,7 @@ $token = $_GET['token'];
 			$pay_like = $row['client_pay_like'];
 			$experience = $row['client_req_experience'];
 			$project_time = $row['client_project_time'];
-
+			
 	}
 
 
@@ -49,7 +49,7 @@ $token = $_GET['token'];
 
 if(isset($_POST['update']))
 {
-
+	
 	$project_name = $_POST['project_name'];
 	$company_name = $_POST['company_name'];
 	$select = $_POST['select1'];
@@ -60,15 +60,15 @@ if(isset($_POST['update']))
 	$pay = $_POST['pay'];
 	$experience = $_POST['experience'];
 	$project_time = $_POST['project_time'];
-
-
-	$query = "UPDATE client_job_posting SET job_title = '{$project_name}', company_name='{$company_name}', job_category = '{$select}',
+	
+	
+	$query = "UPDATE client_job_posting SET job_title = '{$project_name}', company_name='{$company_name}', job_category = '{$select}', 
 	job_description = '{$description}', job_details = '{$c_details}', job_expertise_skills = '{$skills_required}', job_vacanies = '{$job_vacancy}', date = CURRENT_TIMESTAMP ,
 	client_pay_like = '{$pay}', client_req_experience = '{$experience}', client_project_time = '{$project_time}', c_token = '{$token}'  WHERE client_id = {$profile_id} AND c_token = '{$token}' ";
-
+	
 	$result = mysqli_query($connection, $query);
 	confirmQuery($result);
-
+	
 	header("Location: view_job_post.php");
 }
 
@@ -230,7 +230,7 @@ if(isset($_POST['update']))
 
 			<!-- 3 -->
 			<div class="tab-pane fade col-md-6" id="Details" role="tabpanel" aria-labelledby="education-tab">
-		<div class="card" style="text-align: left;">
+				<div class="card" style="text-align: left;">
 					<div class="card-header">
 						3 of 6
 					</div>
