@@ -173,6 +173,7 @@ while($row = mysqli_fetch_array($result_apply))
 			<style>
 				ul.navbar-nav a:hover {
 					color: wheat !important;
+					
 				}
 
 			</style>

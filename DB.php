@@ -1,6 +1,6 @@
 <?php
 //global $connection;
-$connection = mysqli_connect('localhost','root','','iniesta');
+$connection = mysqli_connect('localhost','root','','new');
 if(!$connection)
 {
 	die("Connection Failed!".mysqli_error($connection));
